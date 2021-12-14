@@ -1,29 +1,127 @@
+@import url("palette.css");
 
 .card-wrapper {
-	padding-top: 2rem;
-	width: 100vw;
+	padding-top: 65px;
+	width: 95vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	flex-wrap: wrap;
 	gap: 15px;
+	animation: appear 1s;
+	padding-bottom: 105px;
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+		transform: translate3d(0,-300px,0);
+	}
 }
 
 .question-card {
-	background: white;
+	background: var(--card-background);
+	color: white;
 	box-shadow: 4px 4px 16px rgba(21, 21, 21, 0.5);
 	border-radius: 20px;
-	width: 75%;
-	padding: 1rem;
-	gap: 100px;
+	width: 95vw;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.checkbox-label {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.scales {
+	display: none;
+}
+
+.bookmark-icon {
+	fill: white;
+	padding: 5px;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	cursor: pointer;
+	transition: fill 0.3s;
+	z-index: 0;
+}
+
+.bookmark-icon:hover {
+	fill: lightgrey;
+}
+
+input:checked + .bookmark-icon {
+	fill: var(--bookmark--active);
+	padding: 5px;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	cursor: pointer;
+}
+
+input:checked + .bookmark-icon:hover {
+	fill: var(--bookmark--active);
+	opacity: 0.8;
+}
+
+.question-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.question {
+	margin: 0;
+}
+
+.question-paragraph {
+	margin: 0;
+}
+
+.answer-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.show-answer {
+	font-size: 15px;
+	padding: 12.5px;
+	background-color: var(--card-button);
+	border-style: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s, padding 0.3s;
+	animation: appear 1.5s;
+}
+
+.show-answer:hover {
+	background-color: rgb(66, 185, 68);
+	color: white;
+	padding: 12.5px 30px 12.5px 30px;
+}
+
+.show-answer:active {
+	background-color: var(--card-button);
+	color: black;
 }
 
 .tag {
-	font-weight: 100;
-	background-color: rgb(189, 189, 189);
-	padding: 5px 10px 5px 10px;
-	color: rgb(129, 129, 129);
+	margin: 0;
+	font-size: 14px;
+	font-weight: 400;
+	background-color: var(--tags-background);
+	padding: 6px 12px 6px 12px;
+	color: var(--tags-text);
 	border-radius: 4px;
+	list-style: none;
 }
 
 .tag-list {

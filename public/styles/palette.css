@@ -1,0 +1,33 @@
+:root {
+
+	/* Footer Colors*/
+	--footer-menu-button-1: #e74c3c;
+	--footer-menu-button-1--hover: #c0392b;
+
+	--footer-menu-button-2: #f1c40f;
+	--footer-menu-button-2--hover: #f39c12;
+
+	--footer-menu-button-3: #2ecc71;
+	--footer-menu-button-3--hover: #27ae60;
+
+	--footer-menu-button-4: #3498db;
+	--footer-menu-button-4--hover: #2980b9;
+
+	/* Card Colors */
+	--card-button: var(--yale-blue);
+	--card-button--hover: var(--green-munsell);
+	--bookmark--unactive: #fff;
+	--bookmark--active: var(--dogwood-rose);
+	--tags-background: var(--orange-pantone);
+	--tags-text: rgb(0, 0, 0);
+	--background: var(--byzantium);
+	--card-background: var(--dark-purple);
+
+	/* Palette */
+	--orange-pantone: #f75c03ff;
+	--dogwood-rose: #d90368ff;
+	--byzantium: #820263ff;
+	--dark-purple: #291720ff;
+	--green-munsell: #04a777ff;
+	--yale-blue: #124E78;
+}

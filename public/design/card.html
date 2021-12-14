@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/styles/vars.css" />
 	<link rel="stylesheet" href="/styles/style.css" />
 	<link rel="stylesheet" href="/styles/card.css" />
 	<title>Card</title>
@@ -9,13 +10,21 @@
 <body>
 <main class="card-wrapper">
 	<section class="question-card">
-		<input type="checkbox" class="scales" name="scales"
-			   checked>
-		<h2>Question:</h2>
-		<p>Wie alt ist deine Oma?</p>
-		<button>Show answer</button>
+		<label class="checkbox-label">
+			<input type="checkbox" class="scales" name="scales" />
+			<svg class="bookmark-icon" width="20" height="20" viewBox="0 0 20 20">
+				<path d="M15 1H5a2 2 0 0 0-2 2v16l7-5 7 5V3a2 2 0 0 0-2-2z"/>
+			</svg>
+		</label>
+		<div class="question-wrapper">
+			<h2 class="question">Question:</h2>
+			<p class="question-paragraph">Wie alt ist deine Oma?</p>
+		</div>
+		<div class="answer-wrapper">
+			<button class="show-answer">Show answer</button>
+		</div>
 
-		<div class="tag-box">
+		<div class="tag-wrapper">
 			<ul class="tag-list">
 				<li class="tag">Oma</li>
 				<li class="tag">Alter</li>
@@ -25,21 +34,76 @@
 		</div>
 	</section>
 
+		<section class="question-card">
+			<label class="checkbox-label">
+				<input type="checkbox" class="scales" name="scales"/>
+				<svg class="bookmark-icon" width="20" height="20" viewBox="0 0 20 20">
+					<path d="M15 1H5a2 2 0 0 0-2 2v16l7-5 7 5V3a2 2 0 0 0-2-2z"/>
+				</svg>
+			</label>
+			<div class="question-wrapper">
+				<h2 class="question">Question:</h2>
+				<p class="question-paragraph">Wie Wald ist das Grün?</p>
+			</div>
+			<div class="answer-wrapper">
+				<button class="show-answer">Show answer</button>
+			</div>
 
+			<div class="tag-wrapper">
+				<ul class="tag-list">
+					<li class="tag">Natur</li>
+					<li class="tag">Tiere</li>
+					<li class="tag">Leben</li>
+					<li class="tag">Wald</li>
+				</ul>
+			</div>
+		</section>
+	<section class="question-card">
+		<label class="checkbox-label">
+			<input type="checkbox" class="scales" name="scales"/>
+			<svg class="bookmark-icon" width="20" height="20" viewBox="0 0 20 20">
+				<path d="M15 1H5a2 2 0 0 0-2 2v16l7-5 7 5V3a2 2 0 0 0-2-2z"/>
+			</svg>
+		</label>
+		<div class="question-wrapper">
+			<h2 class="question">Question:</h2>
+			<p class="question-paragraph">Was ist der Unterschied zwischen einer Ente?</p>
+		</div>
+		<div class="answer-wrapper">
+			<button class="show-answer">Show answer</button>
+		</div>
+
+		<div class="tag-wrapper">
+			<ul class="tag-list">
+				<li class="tag">Ente</li>
+				<li class="tag">Tiere</li>
+				<li class="tag">Wasser</li>
+				<li class="tag">Federn</li>
+			</ul>
+		</div>
+	</section>
 
 	<section class="question-card">
-		<input type="checkbox" class="scales" name="scales"
-			   checked>
-		<h2>Question:</h2>
-		<p>Wie Wald ist das grün?</p>
-		<button>Show answer</button>
+		<label class="checkbox-label">
+			<input type="checkbox" class="scales" name="scales"/>
+			<svg class="bookmark-icon" width="20" height="20" viewBox="0 0 20 20">
+				<path d="M15 1H5a2 2 0 0 0-2 2v16l7-5 7 5V3a2 2 0 0 0-2-2z"/>
+			</svg>
+		</label>
+		<div class="question-wrapper">
+			<h2 class="question">Question:</h2>
+			<p class="question-paragraph">Wie geht's?</p>
+		</div>
+		<div class="answer-wrapper">
+			<button class="show-answer">Show answer</button>
+		</div>
 
-		<div class="tag-box">
+		<div class="tag-wrapper">
 			<ul class="tag-list">
-				<li class="tag">Wald</li>
 				<li class="tag">Natur</li>
 				<li class="tag">Tiere</li>
-				<li class="tag">Landschaft</li>
+				<li class="tag">Leben</li>
+				<li class="tag">Wald</li>
 			</ul>
 		</div>
 	</section>

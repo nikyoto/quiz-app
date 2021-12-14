@@ -3,6 +3,7 @@
 */
 body {
 	margin: 0;
+	background: var(--background);
 	font-family: Roboto, sans-serif;
 	display: flex;
 	justify-content: center;
@@ -14,5 +15,6 @@ body {
 *::before,
 *::after {
 	box-sizing: border-box;
+	padding: 0;
 }
 

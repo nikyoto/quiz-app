@@ -13,106 +13,151 @@
 	<meta name="description" content="My HTML App" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="/styles/style.css" />
+	<link rel="stylesheet" href="/styles/header.css" />
+	<link rel="stylesheet" href="/styles/card.css" />
+	<link rel="stylesheet" href="/styles/footer.css" />
+	<link rel="stylesheet" href="/styles/palette.css" />
 </head>
 <body>
-<header>
-<h1>Quiz App</h1>
-
+<header class="header">
+		<svg width="100%" height="50%">
+			<text x="50%" y="70%"  text-anchor="middle"  >
+				Quiz-App
+			</text>
+		</svg>
 </header>
-
-<main class="main-wrapper">
+<main class="card-wrapper">
 	<section class="question-card">
-		<input type="checkbox" class="scales" name="scales"
-			   checked>
-		<h2>Question</h2>
-		<p>Wie alt ist deine Oma?</p>
-		<button>show answer</button>
+		<label class="checkbox-label">
+			<input type="checkbox" class="scales" name="scales" />
+			<svg class="bookmark-icon" width="20" height="20" viewBox="0 0 20 20">
+				<path d="M15 1H5a2 2 0 0 0-2 2v16l7-5 7 5V3a2 2 0 0 0-2-2z"/>
+			</svg>
+		</label>
+		<div class="question-wrapper">
+			<h2 class="question">Question:</h2>
+			<p class="question-paragraph">Wie alt ist deine Oma?</p>
+		</div>
+		<div class="answer-wrapper">
+			<button class="show-answer">Show answer</button>
+		</div>
 
-		<div class="tag-box">
+		<div class="tag-wrapper">
 			<ul class="tag-list">
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
+				<li class="tag">Oma</li>
+				<li class="tag">Alter</li>
+				<li class="tag">Leben</li>
+				<li class="tag">Familie</li>
 			</ul>
 		</div>
 	</section>
 
 	<section class="question-card">
-		<input type="checkbox" class="scales" name="scales"
-			   checked>
-		<h2>Question</h2>
-		<p>Wie alt ist deine Oma?</p>
-		<button>show answer</button>
-
-		<div class="tag-box">
-			<ul class="tag-list">
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-			</ul>
+		<label class="checkbox-label">
+			<input type="checkbox" class="scales" name="scales"/>
+			<svg class="bookmark-icon" width="20" height="20" viewBox="0 0 20 20">
+				<path d="M15 1H5a2 2 0 0 0-2 2v16l7-5 7 5V3a2 2 0 0 0-2-2z"/>
+			</svg>
+		</label>
+		<div class="question-wrapper">
+			<h2 class="question">Question:</h2>
+			<p class="question-paragraph">Wie Wald ist das Grün?</p>
+		</div>
+		<div class="answer-wrapper">
+			<button class="show-answer">Show answer</button>
 		</div>
 
-		<input type="checkbox" class="scales" name="scales"
-			   checked />
-		<h2>Question</h2>
-		<p>Wie alt ist deine Oma?</p>
-		<button>Show answer</button>
-
-		<div class="tag-box">
+		<div class="tag-wrapper">
 			<ul class="tag-list">
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
+				<li class="tag">Natur</li>
+				<li class="tag">Tiere</li>
+				<li class="tag">Leben</li>
+				<li class="tag">Wald</li>
 			</ul>
 		</div>
 	</section>
+	<section class="question-card">
+		<label class="checkbox-label">
+			<input type="checkbox" class="scales" name="scales"/>
+			<svg class="bookmark-icon" width="20" height="20" viewBox="0 0 20 20">
+				<path d="M15 1H5a2 2 0 0 0-2 2v16l7-5 7 5V3a2 2 0 0 0-2-2z"/>
+			</svg>
+		</label>
+		<div class="question-wrapper">
+			<h2 class="question">Question:</h2>
+			<p class="question-paragraph">Was ist der Unterschied zwischen einer Ente?</p>
+		</div>
+		<div class="answer-wrapper">
+			<button class="show-answer">Show answer</button>
+		</div>
 
+		<div class="tag-wrapper">
+			<ul class="tag-list">
+				<li class="tag">Ente</li>
+				<li class="tag">Tiere</li>
+				<li class="tag">Wasser</li>
+				<li class="tag">Federn</li>
+			</ul>
+		</div>
+	</section>
 
 	<section class="question-card">
-		<input type="checkbox" class="scales" name="scales"
-			   checked>
-		<h2>Question</h2>
-		<p>Wie alt ist deine Oma?</p>
-		<button>show answer</button>
+		<label class="checkbox-label">
+			<input type="checkbox" class="scales" name="scales"/>
+			<svg class="bookmark-icon" width="20" height="20" viewBox="0 0 20 20">
+				<path d="M15 1H5a2 2 0 0 0-2 2v16l7-5 7 5V3a2 2 0 0 0-2-2z"/>
+			</svg>
+		</label>
+		<div class="question-wrapper">
+			<h2 class="question">Question:</h2>
+			<p class="question-paragraph">Wie geht's?</p>
+		</div>
+		<div class="answer-wrapper">
+			<button class="show-answer">Show answer</button>
+		</div>
 
-		<div class="tag-box">
+		<div class="tag-wrapper">
 			<ul class="tag-list">
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
+				<li class="tag">Natur</li>
+				<li class="tag">Tiere</li>
+				<li class="tag">Leben</li>
+				<li class="tag">Wald</li>
 			</ul>
 		</div>
 	</section>
-
-	<section class="question-card">
-		<input type="checkbox" class="scales" name="scales"
-			   checked>
-		<h2>Question</h2>
-		<p>Wie alt ist deine Oma?</p>
-		<button>show answer</button>
-
-		<div class="tag-box">
-			<ul class="tag-list">
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-				<li class="tag">Tag 1</li>
-			</ul>
-		</div>
-	</section>
-
 </main>
 
 
 <footer class="footer-menu">
-	<div class="footer-menu-item">1</div>
-	<div class="footer-menu-item">2</div>
-	<div class="footer-menu-item">3</div>
-	<div class="footer-menu-item">4</div>
+	<a class="footer-menu-item">
+		<svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+			<path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+		</svg>
+	</a>
+	<a class="footer-menu-item">
+		<svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+			<path
+				fill="currentColor"
+				d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+			/>
+		</svg>
+	</a>
+	<a class="footer-menu-item">
+		<svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+			<path
+				fill="currentColor"
+				d="M5,3C3.89,3 3,3.89 3,5V19C3,20.11 3.89,21 5,21H19C20.11,21 21,20.11 21,19V5C21,3.89 20.11,3 19,3H5M5,5H19V19H5V5M7,7V9H17V7H7M7,11V13H17V11H7M7,15V17H14V15H7Z"
+			/>
+		</svg>
+	</a>
+	<a class="footer-menu-item">
+		<svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+			<path
+				fill="currentColor"
+				d="M14,6L10.25,11L13.1,14.8L11.5,16C9.81,13.75 7,10 7,10L1,18H23L14,6Z"
+			/>
+		</svg>
+	</a>
 </footer>
 </body>
 </html>
