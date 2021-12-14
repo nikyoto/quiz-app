@@ -1,0 +1,51 @@
+
+/* * * * header 7 * * */
+
+.header7 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	z-index: 2;
+	margin: 0;
+	top: 10px;
+	border-radius: 15px;
+	box-shadow: 0 0 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #2f2f2f;
+	width: 100%;
+}
+
+.patterns {
+	height: 100vh;
+}
+
+
+svg text {
+	font-family: "Lora", "serif";
+	letter-spacing: 10px;
+	stroke: #f1c40f;
+	font-size: 120px;
+	font-weight: 500;
+	stroke-width: 2;
+
+	animation: textAnimate 5s infinite alternate;
+
+}
+
+@keyframes textAnimate {
+	0% {
+		stroke-dasharray: 0 50%;
+		stroke-dashoffset:  20%;
+		fill:#2ecc71;
+
+	}
+
+	100% {
+		stroke-dasharray: 50% 0;
+		stroke-dashoffstet: -20%;
+		fill: hsla(189, 68%, 75%,0%);
+	}
+
+}
