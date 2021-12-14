@@ -1,0 +1,183 @@
+.footer-menu {
+	/**Footer Scope Color-Variables - to not pollute the main scope - colors are very specific to the footer**/
+	--footer-menu-button-1: #e74c3c;
+	--footer-menu-button-1--hover: #c0392b;
+
+	--footer-menu-button-2: #f1c40f;
+	--footer-menu-button-2--hover: #f39c12;
+
+	--footer-menu-button-3: #2ecc71;
+	--footer-menu-button-3--hover: #27ae60;
+
+	--footer-menu-button-4: #3498db;
+	--footer-menu-button-4--hover: #2980b9;
+
+	/**
+    always at position 100% from top -> out of viewport(!), but than taking it back up with margin-top
+    -ask doemser-
+    **/
+	position: fixed;
+	top: 100vh;
+	margin-top: -85px;
+
+	/**always and always on top with z-index 10**/
+	z-index: 10;
+
+	/**sizing**/
+	height: 75px;
+	width: 90%;
+	border-radius: 25px;
+	animation: footerNavBarAppear 0.75s;
+
+	/**flex-box**/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+
+	background-color: #2f2f2f;
+	box-shadow: 4px 4px 32px rgb(21 21 21 / 50%);
+}
+
+@keyframes footerNavBarAppear {
+	0% {
+		opacity: 0;
+		margin-top: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/**
+Buttons
+**/
+
+.footer-menu-item {
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+
+	animation: footerNavBarButtonsAppear 1.25s;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes footerNavBarButtonsAppear {
+	0% {
+		height: 0;
+		width: 0;
+	}
+	75% {
+		height: 3.2em;
+		width: 3.2em;
+	}
+	90% {
+		height: 2.8em;
+		width: 2.8em;
+	}
+	100% {
+		height: 3em;
+		width: 3em;
+	}
+}
+
+/*1st Button*/
+
+.footer-menu-item:nth-child(1) {
+	background-color: var(--footer-menu-button-1);
+}
+
+.footer-menu-item:nth-child(1):hover {
+	cursor: pointer;
+	background-color: var(--footer-menu-button-1--hover);
+}
+
+.footer-menu-item:nth-child(1):active {
+	box-shadow: 0px 0px 7px 2px inset black;
+}
+
+/*2nd Button*/
+
+.footer-menu-item:nth-child(2) {
+	background-color: var(--footer-menu-button-2);
+}
+
+.footer-menu-item:nth-child(2):hover {
+	cursor: pointer;
+	background-color: var(--footer-menu-button-2--hover);
+}
+
+.footer-menu-item:nth-child(2):active {
+	box-shadow: 0px 0px 7px 2px inset black;
+}
+
+/*3rd Button*/
+
+.footer-menu-item:nth-child(3) {
+	background-color: var(--footer-menu-button-3);
+}
+
+.footer-menu-item:nth-child(3):hover {
+	cursor: pointer;
+	background-color: var(--footer-menu-button-3--hover);
+}
+
+.footer-menu-item:nth-child(3):active {
+	box-shadow: 0px 0px 7px 2px inset black;
+}
+
+/*4th Button*/
+
+.footer-menu-item:nth-child(4) {
+	background-color: var(--footer-menu-button-4);
+}
+
+.footer-menu-item:nth-child(4):hover {
+	cursor: pointer;
+	background-color: var(--footer-menu-button-4--hover);
+}
+
+.footer-menu-item:nth-child(4):active {
+	box-shadow: 0px 0px 7px 2px inset black;
+}
+
+.footer-menu-item:active {
+	color: white;
+	box-shadow: 0px 0px 7px 2px inset black;
+}
+
+.footer-menu-item {
+	color: #2f2f2f;
+}
+
+/**Responsive**/
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+	.footer-menu {
+		width: 60%;
+	}
+}
+
+@media (min-width: 992px) {
+	.footer-menu {
+		width: 45%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.footer-menu {
+		width: 30%;
+	}
+}
+
+@media (min-width: 1700px) {
+	.footer-menu {
+		width: 23%;
+	}
+}
