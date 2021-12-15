@@ -1,7 +1,7 @@
-const btnAnswer = document.querySelectorAll(".button-answer");
+const btnAnswer = document.querySelectorAll(".btn-answer");
 const answer = document.querySelectorAll(".answer");
 
-const buttonSelected = "button-answer--clicked";
+const btnSelected = "button-answer--clicked";
 const answerShowing = "answer--showing";
 
 btnAnswer.forEach((btnAnswer, index) => {

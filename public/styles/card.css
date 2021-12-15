@@ -134,14 +134,14 @@ input:checked + .bookmark-icon:hover {
 	flex-direction: column;
 }
 
-.button-answer {
+.btn-answer {
 	font-size: 15px;
 	padding: 12.5px;
 	background-color: var(--card-button);
 	border-radius: 4px;
 	cursor: pointer;
 	transition: border 0.3s, color 0.3s, padding 0.3s;
-	animation: button-grow 1s;
+	animation: btn-grow 1s;
 	color: white;
 	border: 1px solid transparent;
 }
@@ -172,7 +172,7 @@ input:checked + .bookmark-icon:hover {
 	}
 }
 
-@keyframes button-grow {
+@keyframes btn-grow {
 	0% {
 		transform: scale(0);
 	}
@@ -188,7 +188,7 @@ input:checked + .bookmark-icon:hover {
 	}
 }
 
-.button-answer:hover {
+.btn-answer:hover {
 	border: 1px solid var(--card-button--hover);
 	color: var(--card-button--hover);
 	padding: 12.5px 30px 12.5px 30px;
