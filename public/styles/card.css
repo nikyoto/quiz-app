@@ -41,7 +41,7 @@
 }
 
 .bookmark-icon {
-	fill: white;
+	fill: var(--bookmark);
 	padding: 5px;
 	height: 40px;
 	width: 40px;
@@ -52,7 +52,7 @@
 }
 
 .bookmark-icon:hover {
-	fill: lightgrey;
+	fill: var(--bookmark--hover);
 }
 
 input:checked + .bookmark-icon {
@@ -62,6 +62,30 @@ input:checked + .bookmark-icon {
 	width: 40px;
 	position: absolute;
 	cursor: pointer;
+	animation: booky 1s;
+	transform: translate3d(0, -15px, 0);
+}
+
+input:not(:checked) + .bookmark-icon {
+	animation: booky-reverse 1s;
+}
+
+@keyframes booky {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	50% {
+		transform: translate3d(0, -20px, 0);
+	}
+}
+
+@keyframes booky-reverse {
+	0% {
+		transform: translate3d(0, -20px, 0);
+	}
+	50% {
+		transform: translate3d(0, 0px, 0);
+	}
 }
 
 input:checked + .bookmark-icon:hover {
@@ -72,17 +96,36 @@ input:checked + .bookmark-icon:hover {
 .question-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: center;
 	flex-direction: column;
-	padding: 10px;
 }
 
 .question {
 	margin: 0;
+	padding: 0px 0px 12px 10px;
+	font-family: Bakbak One, sans-serif;
+}
+
+.span-q {
+	color: var(--highlight-color);
 }
 
 .question-paragraph {
 	margin: 0;
+	text-align: center;
+	font-weight: 500;
+	padding: 0px 20px 18px 20px;
+}
+
+.question-mark {
+	color: var(--maximum-green-yellow);
+	animation: colorswitch 2s infinite;
+}
+
+@keyframes colorswitch {
+	50% {
+		color: var(--highlight-color);
+	}
 }
 
 .answer-wrapper {
@@ -95,22 +138,40 @@ input:checked + .bookmark-icon:hover {
 	font-size: 15px;
 	padding: 12.5px;
 	background-color: var(--card-button);
-	border-style: none;
 	border-radius: 4px;
 	cursor: pointer;
-	transition: background-color 0.3s, color 0.3s, padding 0.3s;
-	animation: appear 1.5s;
+	transition: border 0.3s, color 0.3s, padding 0.3s;
+	animation: grow 1s;
+	color: white;
+	border: 1px solid transparent;
+}
+
+@keyframes grow {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(0);
+	}
+	66% {
+		transform: scale(1.1);
+		border: 1px solid var(--card-button--hover);
+	}
+	82% {
+		transform: scale(0.9);
+	}
 }
 
 .show-answer:hover {
-	background-color: rgb(66, 185, 68);
-	color: white;
+	border: 1px solid var(--card-button--hover);
+	color: var(--card-button--hover);
 	padding: 12.5px 30px 12.5px 30px;
 }
 
 .show-answer:active {
 	background-color: var(--card-button);
-	color: black;
+	color: var(--card-button--active);
+	border-color: var(--card-button--active);
 }
 
 .tag {

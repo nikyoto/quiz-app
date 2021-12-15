@@ -1,17 +1,4 @@
 .footer-menu {
-	/**Footer Scope Color-Variables - to not pollute the main scope - colors are very specific to the footer**/
-	--footer-menu-button-1: #e74c3c;
-	--footer-menu-button-1--hover: #c0392b;
-
-	--footer-menu-button-2: #f1c40f;
-	--footer-menu-button-2--hover: #f39c12;
-
-	--footer-menu-button-3: #2ecc71;
-	--footer-menu-button-3--hover: #27ae60;
-
-	--footer-menu-button-4: #3498db;
-	--footer-menu-button-4--hover: #2980b9;
-
 	/**
     always at position 100% from top -> out of viewport(!), but than taking it back up with margin-top
     -ask doemser-
@@ -35,8 +22,9 @@
 	justify-content: space-evenly;
 	align-items: center;
 
-	background-color: #2f2f2f;
-	box-shadow: 4px 4px 32px rgb(21 21 21 / 50%);
+	background-color: var(--dark-coral);
+	border: 1px solid var(--footer-menu-item);
+	box-shadow: 4px 4px 50px -8px black;
 }
 
 @keyframes footerNavBarAppear {
@@ -87,12 +75,12 @@ Buttons
 /*1st Button*/
 
 .footer-menu-item:nth-child(1) {
-	background-color: var(--footer-menu-button-1);
+	background-color: var(--footer-menu-button);
 }
 
 .footer-menu-item:nth-child(1):hover {
 	cursor: pointer;
-	background-color: var(--footer-menu-button-1--hover);
+	opacity: 0.8;
 }
 
 .footer-menu-item:nth-child(1):active {
@@ -102,12 +90,12 @@ Buttons
 /*2nd Button*/
 
 .footer-menu-item:nth-child(2) {
-	background-color: var(--footer-menu-button-2);
+	background-color: var(--footer-menu-button);
 }
 
 .footer-menu-item:nth-child(2):hover {
 	cursor: pointer;
-	background-color: var(--footer-menu-button-2--hover);
+	opacity: 0.8;
 }
 
 .footer-menu-item:nth-child(2):active {
@@ -117,12 +105,12 @@ Buttons
 /*3rd Button*/
 
 .footer-menu-item:nth-child(3) {
-	background-color: var(--footer-menu-button-3);
+	background-color: var(--footer-menu-button);
 }
 
 .footer-menu-item:nth-child(3):hover {
 	cursor: pointer;
-	background-color: var(--footer-menu-button-3--hover);
+	opacity: 0.8;
 }
 
 .footer-menu-item:nth-child(3):active {
@@ -132,12 +120,13 @@ Buttons
 /*4th Button*/
 
 .footer-menu-item:nth-child(4) {
-	background-color: var(--footer-menu-button-4);
+	/*background-color: var(--footer-menu-button-4);*/
+	background-color: var(--footer-menu-button);
 }
 
 .footer-menu-item:nth-child(4):hover {
 	cursor: pointer;
-	background-color: var(--footer-menu-button-4--hover);
+	opacity: 0.8;
 }
 
 .footer-menu-item:nth-child(4):active {
@@ -150,7 +139,7 @@ Buttons
 }
 
 .footer-menu-item {
-	color: #2f2f2f;
+	color: var(--footer-menu-item);
 }
 
 /**Responsive**/

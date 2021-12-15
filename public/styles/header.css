@@ -5,39 +5,32 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 2;
-	background-color: var(--card-background);
-	margin: 0;
+	background-color: var(--header-background);
 	box-shadow: 0 0 5px;
 	text-transform: uppercase;
-	font-weight: bold;
 	width: 100vw;
 	height: 50px;
 }
-svg text {
-	font-family: "Lora", "serif";
-	letter-spacing: 6px;
-	stroke: #f1c40f;
+
+.header-text {
+	font-family: "Bakbak One", "serif";
+	stroke: var(--header-text);
 	font-size: 24px;
-	font-weight: 500;
-	stroke-width: 0.5;
-
+	font-weight: 800;
+	stroke-width: 0.25;
 	animation: textAnimate 5s infinite alternate;
-
 }
 
 @keyframes textAnimate {
 	0% {
 		stroke-dasharray: 0 50%;
 		stroke-dashoffset:  20%;
-		fill:#2ecc71;
-
+		fill: var(--header-animation);
 	}
-
 	100% {
 		stroke-dasharray: 50% 0;
 		stroke-dashoffset: -20%;
-		fill: hsla(189, 68%, 75%,0%);
+		fill: var(--header-animation);
 	}
-
 }
 

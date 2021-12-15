@@ -1,33 +1,41 @@
 :root {
+	/* Palette */
+	--dark-coral: #2d3039;
+	--black-coral: #393d49;
+	--lighter-coral: #4b5060;
+	--dark-blue-gray: #575d90ff;
+	--blue-gradient: linear-gradient(0deg, rgba(45,49,82,1) 0%, rgba(87,93,144,1) 100%);
+	--asparagus: #84a07cff;
+	--june-bud: #c3d350ff;
+	--maximum-green-yellow: #e6f14aff;
+	--light-red: #f14a4a;
 
-	/* Footer Colors*/
-	--footer-menu-button-1: #e74c3c;
-	--footer-menu-button-1--hover: #c0392b;
+	/* Global Colors */
+	--background: var(--blue-gradient);
+	--highlight-color: var(--light-red);
+	--selection: var(--maximum-green-yellow);
 
-	--footer-menu-button-2: #f1c40f;
-	--footer-menu-button-2--hover: #f39c12;
-
-	--footer-menu-button-3: #2ecc71;
-	--footer-menu-button-3--hover: #27ae60;
-
-	--footer-menu-button-4: #3498db;
-	--footer-menu-button-4--hover: #2980b9;
+	/* Header */
+	--header-background: var(--black-coral);
+	--header-text: var(--june-bud);
+	--header-animation: var(--lighter-coral);
 
 	/* Card Colors */
-	--card-button: var(--yale-blue);
-	--card-button--hover: var(--green-munsell);
-	--bookmark--unactive: #fff;
-	--bookmark--active: var(--dogwood-rose);
-	--tags-background: var(--orange-pantone);
-	--tags-text: rgb(0, 0, 0);
-	--background: var(--byzantium);
-	--card-background: var(--dark-purple);
+	--card-button: var(--lighter-coral);
+	--card-button--hover: var(--maximum-green-yellow);
+	--card-button--active: var(--asparagus);
 
-	/* Palette */
-	--orange-pantone: #f75c03ff;
-	--dogwood-rose: #d90368ff;
-	--byzantium: #820263ff;
-	--dark-purple: #291720ff;
-	--green-munsell: #04a777ff;
-	--yale-blue: #124E78;
+	--bookmark: white;
+	--bookmark--hover: lightgrey;
+	--bookmark--active: var(--light-red);
+
+	--tags-background: var(--june-bud);
+	--tags-text: black;
+
+	--card-background: var(--black-coral);
+
+	/* Footer Colors*/
+	--footer-menu: var(--dark-coral);
+	--footer-menu-button: var(--black-coral);
+	--footer-menu-item: var(--maximum-green-yellow);
 }
