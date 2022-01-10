@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	const buttons = document.querySelectorAll("button");
+	const jsButton = document.querySelectorAll(".js-button");
+	// "Square" brackets [] to get an attribute
+	const dataJsButton = document.querySelectorAll("[data-js=button]");
+</script>
+
+<!--
+
+ [] - brackets
+ {} - braces
+ () - parentheses (parens)
+
+-->
+
+
+<script>
+
+	// index is zero based
+	const items = ["a", "b", "c"]
+
+
+	const callbackFunction = function(item, index, allItems) {
+		console.log(index)
+	}
+
+	// forEach has one argument (function)
+	items.forEach(callbackFunction)
+
+	// the function has three arguments which are injected by `forEach`
+	items.forEach(function(item, index, allItems) {
+		console.log(item) // "a" | "b" | "c"
+		console.log(index) // 0 | 1 | 2
+		console.log(allItems) //  ["a", "b", "c"] (same as items)
+	})
+
+	// The arguments can have any name.
+	// YOU - can choose the name that makes most sense to you
+	items.forEach(function(foo, bar, baz) {
+		// console.log(index) // instead of "index"
+		console.log(bar) // we can use "bar"
+	})
+
+	// 1 + 2 * 2 = 5
+	// (1 + 2) * 2 = 6
+
+	// We can also use an "arrow function"
+	items.forEach((item) => {
+		console.log(item)
+	})
+
+	// If we only need access to the item we can remove the parentheses "()"
+	items.forEach(item => {
+		console.log(item)
+	})
+
+	// If we only need access to the index we  have to list item too, even if it is unused
+	items.forEach((item, index) => {
+		console.log(index)
+	})
+
+	// Here "allItems" is unused and can be removed
+	items.forEach((item, index, allItems) => {
+		console.log(index)
+	})
+
+	items.forEach((item, index, allItems) => {
+		// "allItems" is just the reference to the original array
+		// allItems = items = ["a", "b", "c"]
+		//  items.length = 3
+		//  allItems.length = 3
+
+		// We could use "allItems" to create a string: "1 of 3" | "2 of 3" | "3 of 3"
+		// We can use "allItems.length" to determine the length (count of) items
+		console.log(index + 1, "of", allItems.length);
+	})
+
+</script>
+
+
+<style>
+
+	button {
+		background: blue;
+	}
+	button[disabled] {
+		background: red;
+	}
+</style>
+
+<!--
+    We can create "special" classNames just for JavaScript
+    DO NOT use JavaScript classes for styling.
+    This is just a naming convention, we could also use a different naming pattern
+    i.e "funkyTown--button" (it could be anything that you as a team decided upon.
+-->
+<button  class="js-button">Click me</button>
+<button data-js="button">Click me</button>
+
+
+<button class="button js-button">Click me</button>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

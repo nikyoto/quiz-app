@@ -12,7 +12,16 @@
 	height: 50px;
 }
 
-.header-text {
+.header-text--partOne {								/*ich möchte diese Klasse mit der nächsten Klasse addieren und zentral in der Box ausgeben */
+	font-family: "Bakbak One", "serif";
+	stroke: var(--highlight-color);
+	font-size: 24px;
+	font-weight: 800;
+	stroke-width: 0.25;
+	animation: textAnimate 5s infinite alternate;
+}
+
+.header-text--partTwo {							/*ich möchte diese Klasse mit der darüber liegenden Klasse addieren und zentral ausgeben */
 	font-family: "Bakbak One", "serif";
 	stroke: var(--header-text);
 	font-size: 24px;
@@ -21,7 +30,7 @@
 	animation: textAnimate 5s infinite alternate;
 }
 
-@keyframes textAnimate {
+@keyframes textAnimate {					/*beide KLassen sollen die gleiche Animation haben*/
 	0% {
 		stroke-dasharray: 0 50%;
 		stroke-dashoffset:  20%;
